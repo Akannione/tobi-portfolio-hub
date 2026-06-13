@@ -45,8 +45,8 @@ gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
   "/repos/${OWNER}/${REPO_NAME}/pages" \
-  -f source.branch=main \
-  -f source.path=/ >/dev/null 2>&1 || true
+  -f 'source[branch]=main' \
+  -f 'source[path]=/' >/dev/null 2>&1 || true
 
 echo "Published repository: https://github.com/${OWNER}/${REPO_NAME}"
 echo "GitHub Pages URL may take a few minutes to activate."
