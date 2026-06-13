@@ -6,14 +6,23 @@
     <title>Tobi Oniyide | Analytics, Automation, and Business Systems Portfolio</title>
     <meta
       name="description"
-      content="Portfolio hub for Tobi Oniyide: business operations reporting, CRM automation, technical consulting systems, and AI operating workflows."
+      content="Portfolio hub for Tobi Oniyide: analytics, automation, business intelligence, technical consulting systems, and AI operating workflows."
     >
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="progress-rail" aria-hidden="true">
+      <span class="rail-number">01</span>
+      <div class="rail-line"><span id="scrollProgress"></span></div>
+      <span class="rail-number">06</span>
+    </div>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Tobi Oniyide portfolio home">Tobi Oniyide</a>
+      <a class="brand" href="#top" aria-label="Tobi Oniyide portfolio home">
+        <span class="brand-mark">TO</span>
+        <span>Tobi Oniyide</span>
+      </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
@@ -23,12 +32,12 @@
     </header>
 
     <main id="top">
-      <section class="hero section">
+      <section class="hero section reveal">
         <div class="hero-copy">
           <h1>Business systems, analytics, and automation built for practical decisions.</h1>
           <p>
             I connect Business Administration and Computer Information Systems Technology with
-            hands-on reporting, CRM cleanup, workflow automation, and full-stack business tools.
+            practical reporting systems, CRM cleanup, workflow automation, and full-stack business tools.
           </p>
           <div class="actions" aria-label="Primary links">
             <a class="button primary" href="https://github.com/Akannione">GitHub</a>
@@ -37,176 +46,182 @@
           </div>
         </div>
 
-        <div class="hero-media" aria-label="Portfolio dashboard previews">
-          <figure class="media-frame large">
-            <img src="assets/images/business_operations_dashboard.png" alt="Business operations dashboard preview">
-          </figure>
-          <figure class="media-frame small overlay-one">
-            <img src="assets/images/crm_dashboard.png" alt="CRM sales pipeline dashboard preview">
-          </figure>
-          <figure class="media-frame small overlay-two">
-            <img src="assets/images/business_operations_kpi.png" alt="Operations KPI summary preview">
-          </figure>
+        <div class="hero-system" aria-label="Interactive analytics system preview">
+          <div class="system-topbar">
+            <span>Business Operations Overview</span>
+            <button type="button" id="cycleProject">Cycle proof</button>
+          </div>
+          <div class="metric-board">
+            <article>
+              <span>Total value</span>
+              <strong data-count="4462">$0</strong>
+              <small>pipeline tracked</small>
+            </article>
+            <article>
+              <span>Clean records</span>
+              <strong data-count="1400">0</strong>
+              <small>across case studies</small>
+            </article>
+            <article>
+              <span>Response SLA</span>
+              <strong data-count="96">0%</strong>
+              <small>operations workflow</small>
+            </article>
+          </div>
+          <div class="chart-stage">
+            <div class="chart-line" aria-hidden="true"></div>
+            <div class="chart-bars" aria-hidden="true">
+              <span style="--h: 42%"></span>
+              <span style="--h: 66%"></span>
+              <span style="--h: 58%"></span>
+              <span style="--h: 82%"></span>
+              <span style="--h: 74%"></span>
+              <span style="--h: 92%"></span>
+            </div>
+          </div>
+          <div class="pipeline-strip">
+            <span>Clean</span>
+            <span>Model</span>
+            <span>Report</span>
+            <span>Automate</span>
+          </div>
         </div>
       </section>
 
-      <section class="section intro-band" aria-labelledby="proof-heading">
+      <section class="proof-band reveal" aria-labelledby="proof-heading">
         <div>
           <h2 id="proof-heading">Current proof system</h2>
-          <p>
-            The work below is built around repeatable business value: cleaner data, clearer
-            dashboards, better follow-up discipline, and documented workflows that future teams
-            can actually maintain.
-          </p>
+          <p>Public work connected to business outcomes, not isolated technical demos.</p>
         </div>
         <dl class="proof-grid">
           <div>
-            <dt>2</dt>
+            <dt data-count="2">0</dt>
             <dd>published analytics case studies</dd>
           </div>
           <div>
-            <dt>1</dt>
+            <dt data-count="1">0</dt>
             <dd>full-stack business OS demo</dd>
           </div>
           <div>
-            <dt>5</dt>
+            <dt data-count="5">0</dt>
             <dd>resume and role-positioning variants</dd>
           </div>
         </dl>
       </section>
 
-      <section class="section project-list" id="projects" aria-labelledby="projects-heading">
+      <section class="section projects reveal" id="projects" aria-labelledby="projects-heading">
         <div class="section-heading">
-          <h2 id="projects-heading">Featured projects</h2>
-          <p>Built to show practical analytics, automation, and business operations judgment.</p>
+          <h2 id="projects-heading">Systems I have built.</h2>
+          <p>Select a project to shift the spotlight, preview the work, and open the strongest proof.</p>
         </div>
 
-        <article class="project-row">
-          <div class="project-copy">
-            <h3>Business Operations Reporting &amp; Automation System</h3>
-            <p>
-              A repeatable reporting workflow that cleans messy operations data with Python,
-              analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management
-              review.
-            </p>
-            <ul class="result-list">
-              <li>640 cleaned records after deduplication</li>
-              <li>95.8% first-response SLA performance</li>
-              <li>$158,891 estimated margin supported</li>
-            </ul>
-            <div class="link-row">
-              <a href="https://github.com/Akannione/business-operations-reporting-system">GitHub README</a>
-              <a href="https://htmlpreview.github.io/?https://github.com/Akannione/business-operations-reporting-system/blob/main/reports/portfolio_showcase.html">Showcase</a>
-              <a href="https://github.com/Akannione/business-operations-reporting-system/blob/main/case_study.md">Case study</a>
-            </div>
+        <div class="project-shell">
+          <div class="project-tabs" role="tablist" aria-label="Featured projects">
+            <button type="button" class="project-tab active" data-project="operations">Operations Reporting</button>
+            <button type="button" class="project-tab" data-project="crm">CRM Pipeline</button>
+            <button type="button" class="project-tab" data-project="businessos">Business OS MVP</button>
           </div>
-          <figure class="project-image">
-            <img src="assets/images/business_operations_dashboard.png" alt="Dashboard preview for operations reporting project">
-          </figure>
-        </article>
 
-        <article class="project-row reverse">
-          <div class="project-copy">
-            <h3>CRM Sales Pipeline &amp; Lead Follow-Up Automation System</h3>
-            <p>
-              A sales operations workflow that cleans CRM exports, scores leads, prioritizes
-              follow-up work, and turns pipeline data into clear management reports.
-            </p>
-            <ul class="result-list">
-              <li>760 deduplicated clean leads</li>
-              <li>$4.46M active pipeline value</li>
-              <li>188 high-priority active leads</li>
-            </ul>
-            <div class="link-row">
-              <a href="https://github.com/Akannione/crm-sales-pipeline-automation-system">GitHub README</a>
-              <a href="https://htmlpreview.github.io/?https://github.com/Akannione/crm-sales-pipeline-automation-system/blob/main/reports/portfolio_showcase.html">Showcase</a>
-              <a href="https://github.com/Akannione/crm-sales-pipeline-automation-system/blob/main/case_study.md">Case study</a>
+          <article class="project-spotlight" id="projectSpotlight">
+            <div class="project-copy">
+              <span id="projectIndex">01 / 03</span>
+              <h3 id="projectTitle">Business Operations Reporting &amp; Automation System</h3>
+              <p id="projectDescription">
+                A repeatable reporting workflow that cleans messy operations data with Python,
+                analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management review.
+              </p>
+              <ul class="result-list" id="projectResults">
+                <li>640 cleaned records after deduplication</li>
+                <li>95.8% first-response SLA performance</li>
+                <li>$158,891 estimated margin supported</li>
+              </ul>
+              <div class="link-row" id="projectLinks">
+                <a href="https://github.com/Akannione/business-operations-reporting-system">GitHub README</a>
+                <a href="https://htmlpreview.github.io/?https://github.com/Akannione/business-operations-reporting-system/blob/main/reports/portfolio_showcase.html">Showcase</a>
+                <a href="https://github.com/Akannione/business-operations-reporting-system/blob/main/case_study.md">Case study</a>
+              </div>
             </div>
-          </div>
-          <figure class="project-image">
-            <img src="assets/images/crm_dashboard.png" alt="Dashboard preview for CRM sales pipeline project">
-          </figure>
-        </article>
-
-        <article class="project-row">
-          <div class="project-copy">
-            <h3>Chiropractic Business OS MVP</h3>
-            <p>
-              A focused full-stack web app for chiropractic practices to capture inquiries, track
-              follow-ups, review KPIs, export CSVs, and support lightweight intake automation.
-            </p>
-            <ul class="result-list">
-              <li>React, Vite, TypeScript frontend</li>
-              <li>Node, Express, TypeScript backend</li>
-              <li>MongoDB data model and API documentation</li>
-            </ul>
-            <div class="link-row">
-              <a href="https://github.com/Akannione/chiropractic-business-os">GitHub README</a>
-              <a href="https://github.com/Akannione/chiropractic-business-os/blob/main/docs/WORKFLOW_AUTOMATION.md">Automation notes</a>
-              <a href="https://github.com/Akannione/chiropractic-business-os/blob/main/docs/API.md">API docs</a>
-            </div>
-          </div>
-          <figure class="project-image">
-            <img src="assets/images/business_os_mvp.svg" alt="Dashboard preview for Chiropractic Business OS MVP">
-          </figure>
-        </article>
+            <figure class="project-image">
+              <img id="projectImage" src="assets/images/business_operations_dashboard.png" alt="Dashboard preview for operations reporting project">
+            </figure>
+          </article>
+        </div>
       </section>
 
-      <section class="section services" id="services" aria-labelledby="services-heading">
+      <section class="section services reveal" id="services" aria-labelledby="services-heading">
         <div class="section-heading">
-          <h2 id="services-heading">What I can build</h2>
-          <p>Small, useful systems that make operations easier to manage.</p>
+          <h2 id="services-heading">How I help businesses win.</h2>
+          <p>Focused service lanes tied to existing proof and repeatable delivery.</p>
         </div>
         <div class="service-grid">
           <article>
+            <span class="service-icon">01</span>
             <h3>Data cleanup and reporting</h3>
             <p>Clean spreadsheets, CRM exports, CSV files, and recurring reports so teams can rely on their numbers.</p>
           </article>
           <article>
+            <span class="service-icon">02</span>
             <h3>Dashboards and KPI workflows</h3>
             <p>Build Excel, Google Sheets, SQL, or lightweight HTML dashboards around the decisions a team needs to make.</p>
           </article>
           <article>
+            <span class="service-icon">03</span>
             <h3>CRM and follow-up systems</h3>
             <p>Organize lead records, deal stages, priorities, and follow-up queues so revenue does not get lost in messy data.</p>
           </article>
           <article>
+            <span class="service-icon">04</span>
             <h3>Business OS prototypes</h3>
             <p>Design practical web tools for intake, tracking, reporting, exports, and repeatable operating workflows.</p>
           </article>
         </div>
       </section>
 
-      <section class="section os-section" id="system" aria-labelledby="os-heading">
+      <section class="section os-section reveal" id="system" aria-labelledby="os-heading">
         <div class="os-copy">
-          <h2 id="os-heading">TOBI_OS: my personal operating system</h2>
+          <h2 id="os-heading">TOBI_OS: the operating layer behind the work.</h2>
           <p>
             TOBI_OS coordinates career priorities, portfolio assets, graduate school planning,
             opportunity scoring, project health checks, scheduled reviews, and phone digests.
-            It gives Codex a source of truth so future work starts from context instead of scattered notes.
           </p>
-          <div class="link-row">
-            <a href="#projects">Project proof</a>
-            <a href="#services">Service lanes</a>
-            <a href="#contact">Contact links</a>
-          </div>
+          <ul class="check-list">
+            <li>Maps projects before new work starts</li>
+            <li>Scores opportunities and keeps the next action visible</li>
+            <li>Turns repeated work into templates, scripts, and workflows</li>
+            <li>Keeps portfolio, freelance, consulting, and learning systems connected</li>
+          </ul>
         </div>
-        <div class="os-panel">
-          <div class="os-row"><span>Review cadence</span><strong>Mon / Wed / Fri</strong></div>
-          <div class="os-row"><span>Automation</span><strong>refresh, validate, score</strong></div>
-          <div class="os-row"><span>Delivery</span><strong>phone digest</strong></div>
-          <div class="os-row"><span>Project health</span><strong>checks passing</strong></div>
+        <div class="os-console">
+          <div class="console-sidebar">
+            <span>TOBI_OS</span>
+            <button class="active" type="button">Dashboard</button>
+            <button type="button">Opportunities</button>
+            <button type="button">Projects</button>
+            <button type="button">Automations</button>
+          </div>
+          <div class="console-main">
+            <div class="console-grid">
+              <article><span>System health</span><strong>Pass</strong></article>
+              <article><span>Portfolio hub</span><strong>Live</strong></article>
+              <article><span>Review cadence</span><strong>3x/wk</strong></article>
+              <article><span>Next action</span><strong>Apply</strong></article>
+            </div>
+            <div class="activity-list">
+              <span>Latest automation</span>
+              <p>Refresh OS -> validate -> score opportunities -> send phone digest</p>
+              <div class="activity-line"><span></span></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section about" aria-labelledby="about-heading">
+      <section class="section about reveal" aria-labelledby="about-heading">
         <div>
-          <h2 id="about-heading">About</h2>
+          <h2 id="about-heading">Business mind. Systems builder. Problem solver.</h2>
           <p>
-            I am building toward analytics, automation, business intelligence, solutions
-            engineering, and technical consulting roles. My edge is connecting business context
-            with systems thinking: understanding the workflow, cleaning the data, building the
-            report or tool, and documenting how someone else can keep using it.
+            I am building toward analytics, automation, business intelligence, solutions engineering,
+            and technical consulting roles. My edge is connecting business context with systems thinking:
+            understanding the workflow, cleaning the data, building the report or tool, and documenting how someone else can keep using it.
           </p>
         </div>
         <div class="about-list">
@@ -221,15 +236,19 @@
         </div>
       </section>
 
-      <section class="section contact" id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact and links</h2>
-        <p>Use the links below to review the work, resume, and public profiles.</p>
-        <div class="actions">
-          <a class="button primary" href="https://github.com/Akannione">GitHub</a>
-          <a class="button" href="https://www.linkedin.com/in/tobi-oniyide/">LinkedIn</a>
-          <a class="button" href="assets/docs/tobi_oniyide_master_resume.pdf">Resume</a>
+      <section class="section contact reveal" id="contact" aria-labelledby="contact-heading">
+        <div>
+          <h2 id="contact-heading">Let us build something useful.</h2>
+          <p>Use the links below to review the work, resume, and public profiles.</p>
+        </div>
+        <div class="contact-grid">
+          <a href="https://github.com/Akannione"><span>GitHub</span><strong>github.com/Akannione</strong></a>
+          <a href="https://www.linkedin.com/in/tobi-oniyide/"><span>LinkedIn</span><strong>linkedin.com/in/tobi-oniyide</strong></a>
+          <a href="assets/docs/tobi_oniyide_master_resume.pdf"><span>Resume</span><strong>PDF resume</strong></a>
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

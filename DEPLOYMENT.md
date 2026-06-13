@@ -1,10 +1,10 @@
 # Portfolio Hub Deployment
 
-This folder is ready to publish as a static site.
+This folder is ready to publish as a dynamic static site.
 
 ## Recommended Path
 
-Use GitHub Pages for the first public version because the hub is plain HTML/CSS and does not need a build step.
+Use GitHub Pages because the hub is plain HTML/CSS/JavaScript and does not need a build step.
 
 Recommended repository name:
 
@@ -40,6 +40,7 @@ python3 AUTOMATION/validate_os.py
 - `index.html` opens locally.
 - All project links use public URLs.
 - Resume link points to `assets/docs/tobi_oniyide_master_resume.pdf`.
+- `script.js` exists and is referenced by `index.html`.
 - Images exist under `assets/images/`.
 - No links point to `../career_system`, `../portfolio`, `../business_os_mvp`, or `../TOBI_OS`.
 - Contact path is acceptable for public use.

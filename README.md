@@ -1,6 +1,6 @@
 # Tobi Oniyide Portfolio Hub
 
-This is a static portfolio hub that connects the strongest existing assets in the workspace.
+This is a dynamic static portfolio hub that connects the strongest existing assets in the workspace.
 
 ## Purpose
 
@@ -29,6 +29,13 @@ portfolio_hub/index.html
 
 No build step is required.
 
+The frontend uses:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- local image and document assets under `assets/`
+
 ## Deployment Check
 
 Run this before publishing:
@@ -52,6 +59,7 @@ The deployable folder now includes:
 - public project links
 - bundled resume PDF at `assets/docs/tobi_oniyide_master_resume.pdf`
 - image assets under `assets/images/`
+- native JavaScript interactions in `script.js`
 - deployment checker at `scripts/check_deploy_ready.py`
 - `.nojekyll` for GitHub Pages compatibility
 

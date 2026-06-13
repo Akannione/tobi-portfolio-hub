@@ -14,6 +14,7 @@ INDEX = ROOT / "index.html"
 REQUIRED_FILES = [
     ROOT / "index.html",
     ROOT / "styles.css",
+    ROOT / "script.js",
     ROOT / ".nojekyll",
     ROOT / "DEPLOYMENT.md",
     ROOT / "assets/docs/tobi_oniyide_master_resume.pdf",
