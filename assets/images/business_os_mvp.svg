@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Chiropractic Business OS dashboard preview</title>
+  <desc id="desc">Screenshot-style preview of the Chiropractic Business OS dashboard with sidebar navigation, KPI cards, recent inquiries, and follow-up focus.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#142033" flood-opacity="0.18"/>
+    </filter>
+    <clipPath id="round">
+      <rect width="1600" height="1000" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#edf2f6"/>
+  <g filter="url(#shadow)">
+    <rect x="80" y="70" width="1440" height="860" rx="20" fill="#f5f7fa"/>
+    <g clip-path="url(#round)" transform="translate(80 70)">
+      <rect width="260" height="860" fill="#0f1f2e"/>
+      <rect x="260" width="1180" height="860" fill="#f5f7fa"/>
+
+      <g transform="translate(34 38)">
+        <rect width="48" height="48" rx="9" fill="#38a169"/>
+        <text x="24" y="31" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">OS</text>
+        <text x="64" y="20" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Chiropractic</text>
+        <text x="64" y="45" font-family="Inter, Arial, sans-serif" font-size="16" fill="#b8c3cf">Business OS</text>
+      </g>
+
+      <g transform="translate(24 132)" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">
+        <rect width="212" height="48" rx="8" fill="#293846"/>
+        <text x="52" y="30" fill="#f7fafc">Dashboard</text>
+        <circle cx="25" cy="24" r="8" fill="#97d3a6"/>
+
+        <text x="52" y="91" fill="#d9e2ec">Patient Inquiries</text>
+        <circle cx="25" cy="85" r="8" fill="#536474"/>
+
+        <text x="52" y="151" fill="#d9e2ec">Weekly Summary</text>
+        <circle cx="25" cy="145" r="8" fill="#536474"/>
+
+        <text x="52" y="211" fill="#d9e2ec">Exports</text>
+        <circle cx="25" cy="205" r="8" fill="#536474"/>
+
+        <text x="52" y="271" fill="#d9e2ec">Public Intake</text>
+        <circle cx="25" cy="265" r="8" fill="#536474"/>
+      </g>
+
+      <g transform="translate(24 710)">
+        <rect width="212" height="48" rx="8" fill="#223241"/>
+        <text x="54" y="30" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#d9e2ec">Reset demo data</text>
+        <circle cx="26" cy="24" r="9" fill="#536474"/>
+      </g>
+
+      <g transform="translate(308 42)">
+        <text x="0" y="44" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#172033">Chiropractic Business OS</text>
+        <text x="0" y="76" font-family="Inter, Arial, sans-serif" font-size="18" fill="#657386">Track patient inquiries, follow-ups, active patients, and estimated treatment value.</text>
+        <rect x="930" y="4" width="150" height="46" rx="8" fill="#176b4d"/>
+        <text x="1005" y="33" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#ffffff">Add Inquiry</text>
+      </g>
+
+      <g transform="translate(308 152)">
+        <text x="0" y="34" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#172033">Practice Performance Dashboard</text>
+        <text x="0" y="64" font-family="Inter, Arial, sans-serif" font-size="17" fill="#657386">See the most important follow-up and patient inquiry signals in under 30 seconds.</text>
+      </g>
+
+      <g transform="translate(308 244)" font-family="Inter, Arial, sans-serif">
+        <g>
+          <rect width="170" height="132" rx="8" fill="#f6f9ff" stroke="#94b8ff"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">EST. VALUE</text>
+          <text x="16" y="69" font-size="28" font-weight="850" fill="#172033">$27,400</text>
+          <text x="16" y="102" font-size="13" fill="#657386">Potential care plan value</text>
+        </g>
+        <g transform="translate(188 0)">
+          <rect width="170" height="132" rx="8" fill="#fffaf0" stroke="#e9c46a"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">FOLLOW-UPS</text>
+          <text x="16" y="69" font-size="28" font-weight="850" fill="#172033">11</text>
+          <text x="16" y="102" font-size="13" fill="#657386">Need staff action</text>
+        </g>
+        <g transform="translate(376 0)">
+          <rect width="170" height="132" rx="8" fill="#f5fff7" stroke="#97d3a6"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">ACTIVE</text>
+          <text x="16" y="69" font-size="28" font-weight="850" fill="#172033">42</text>
+          <text x="16" y="102" font-size="13" fill="#657386">Active patients</text>
+        </g>
+        <g transform="translate(564 0)">
+          <rect width="170" height="132" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">CONVERSION</text>
+          <text x="16" y="69" font-size="28" font-weight="850" fill="#172033">34%</text>
+          <text x="16" y="102" font-size="13" fill="#657386">Inquiry to patient rate</text>
+        </g>
+        <g transform="translate(752 0)">
+          <rect width="170" height="132" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">NEW WEEK</text>
+          <text x="16" y="69" font-size="28" font-weight="850" fill="#172033">8</text>
+          <text x="16" y="102" font-size="13" fill="#657386">New inquiries</text>
+        </g>
+        <g transform="translate(940 0)">
+          <rect width="170" height="132" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+          <text x="16" y="30" font-size="13" font-weight="800" fill="#657386">TOP SOURCE</text>
+          <text x="16" y="69" font-size="25" font-weight="850" fill="#172033">Referral</text>
+          <text x="16" y="102" font-size="13" fill="#657386">Best inquiry source</text>
+        </g>
+      </g>
+
+      <g transform="translate(308 408)" font-family="Inter, Arial, sans-serif">
+        <rect width="690" height="356" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+        <text x="22" y="38" font-size="22" font-weight="800" fill="#172033">Recent Patient Inquiries</text>
+        <text x="22" y="66" font-size="15" fill="#657386">Latest inquiry activity and current status.</text>
+        <g transform="translate(22 98)" font-size="13" font-weight="800" fill="#657386">
+          <text x="0" y="0">PATIENT</text>
+          <text x="182" y="0">SOURCE</text>
+          <text x="318" y="0">STATUS</text>
+          <text x="492" y="0">FOLLOW-UP</text>
+        </g>
+        <g transform="translate(22 125)" font-size="15" fill="#172033">
+          <line x1="0" y1="0" x2="646" y2="0" stroke="#e7edf3"/>
+          <text x="0" y="33" font-weight="750">Maya Johnson</text>
+          <text x="182" y="33" fill="#657386">Website</text>
+          <rect x="318" y="12" width="128" height="28" rx="14" fill="#fff0cf"/>
+          <text x="382" y="31" text-anchor="middle" font-size="12" font-weight="850" fill="#8a5a00">FOLLOW-UP</text>
+          <text x="492" y="33" fill="#657386">Today</text>
+          <line x1="0" y1="56" x2="646" y2="56" stroke="#e7edf3"/>
+
+          <text x="0" y="89" font-weight="750">Chris Allen</text>
+          <text x="182" y="89" fill="#657386">Referral</text>
+          <rect x="318" y="68" width="150" height="28" rx="14" fill="#e4edff"/>
+          <text x="393" y="87" text-anchor="middle" font-size="12" font-weight="850" fill="#274f9f">CONSULTATION</text>
+          <text x="492" y="89" fill="#657386">Jun 13</text>
+          <line x1="0" y1="112" x2="646" y2="112" stroke="#e7edf3"/>
+
+          <text x="0" y="145" font-weight="750">Dana Brooks</text>
+          <text x="182" y="145" fill="#657386">Google</text>
+          <rect x="318" y="124" width="118" height="28" rx="14" fill="#dff7e7"/>
+          <text x="377" y="143" text-anchor="middle" font-size="12" font-weight="850" fill="#176b4d">ACTIVE</text>
+          <text x="492" y="145" fill="#657386">Jun 14</text>
+          <line x1="0" y1="168" x2="646" y2="168" stroke="#e7edf3"/>
+
+          <text x="0" y="201" font-weight="750">Jordan Price</text>
+          <text x="182" y="201" fill="#657386">Insurance</text>
+          <rect x="318" y="180" width="128" height="28" rx="14" fill="#fff0cf"/>
+          <text x="382" y="199" text-anchor="middle" font-size="12" font-weight="850" fill="#8a5a00">FOLLOW-UP</text>
+          <text x="492" y="201" fill="#657386">Overdue</text>
+        </g>
+      </g>
+
+      <g transform="translate(1020 408)" font-family="Inter, Arial, sans-serif">
+        <rect width="368" height="356" rx="8" fill="#ffffff" stroke="#d9e1ea"/>
+        <text x="22" y="38" font-size="22" font-weight="800" fill="#172033">Follow-Up Focus</text>
+        <text x="22" y="66" font-size="15" fill="#657386">Handle these conversations first.</text>
+        <text x="22" y="111" font-size="15" font-weight="850" fill="#8f1d1d">Overdue</text>
+        <g transform="translate(22 126)">
+          <rect width="324" height="58" rx="8" fill="#fff3f3"/>
+          <text x="14" y="24" font-size="15" font-weight="800" fill="#8f1d1d">Jordan Price</text>
+          <text x="14" y="44" font-size="13" fill="#8f1d1d">Insurance question needs callback</text>
+        </g>
+        <g transform="translate(22 194)">
+          <rect width="324" height="58" rx="8" fill="#fff3f3"/>
+          <text x="14" y="24" font-size="15" font-weight="800" fill="#8f1d1d">Ari Walker</text>
+          <text x="14" y="44" font-size="13" fill="#8f1d1d">Missed intake form follow-up</text>
+        </g>
+        <text x="22" y="292" font-size="15" font-weight="850" fill="#795600">Due Today</text>
+        <g transform="translate(22 307)">
+          <rect width="324" height="34" rx="8" fill="#fff9e8"/>
+          <text x="14" y="23" font-size="14" font-weight="800" fill="#795600">Maya Johnson - new website inquiry</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
