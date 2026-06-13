@@ -74,6 +74,16 @@ const projectResults = document.querySelector('#projectResults');
 const projectLinks = document.querySelector('#projectLinks');
 const projectImage = document.querySelector('#projectImage');
 const cycleProject = document.querySelector('#cycleProject');
+const previousProject = document.querySelector('#previousProject');
+const nextProject = document.querySelector('#nextProject');
+const projectMeter = document.querySelector('#projectMeter');
+const activeSignal = document.querySelector('#activeSignal');
+const orbitDots = document.querySelectorAll('.orbit-dot');
+const commandMenu = document.querySelector('#commandMenu');
+const openCommand = document.querySelector('#openCommand');
+const closeCommand = document.querySelector('#closeCommand');
+const commandButtons = document.querySelectorAll('[data-command]');
+const sectionTargets = ['top', 'projects', 'services', 'system', 'contact'];
 let activeProject = 'operations';
 let countersStarted = false;
 
@@ -127,6 +137,7 @@ revealItems.forEach((item) => observer.observe(item));
 function renderProject(key) {
   const project = projects[key];
   if (!project) return;
+  const index = projectKeys.indexOf(key);
   activeProject = key;
   tabs.forEach((tab) => tab.classList.toggle('active', tab.dataset.project === key));
   spotlight.classList.remove('switching');
@@ -138,6 +149,8 @@ function renderProject(key) {
   projectDescription.textContent = project.description;
   projectImage.src = project.image;
   projectImage.alt = project.alt;
+  projectMeter.style.transform = `translateX(${index * 100}%)`;
+  activeSignal.textContent = project.title.replace(' & Automation System', '').replace(' System', '');
 
   projectResults.replaceChildren(
     ...project.results.map((result) => {
@@ -161,11 +174,87 @@ tabs.forEach((tab) => {
   tab.addEventListener('click', () => renderProject(tab.dataset.project));
 });
 
-cycleProject.addEventListener('click', () => {
+function goToProject(direction = 1) {
   const currentIndex = projectKeys.indexOf(activeProject);
-  const next = projectKeys[(currentIndex + 1) % projectKeys.length];
+  const next = projectKeys[(currentIndex + direction + projectKeys.length) % projectKeys.length];
   renderProject(next);
+}
+
+cycleProject.addEventListener('click', () => {
+  goToProject(1);
   document.querySelector('#projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+previousProject.addEventListener('click', () => goToProject(-1));
+nextProject.addEventListener('click', () => goToProject(1));
+
+function scrollToSection(id) {
+  const target = id === 'top' ? document.querySelector('#top') : document.querySelector(`#${id}`);
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+orbitDots.forEach((dot) => {
+  dot.addEventListener('click', () => scrollToSection(dot.dataset.target));
+});
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    const id = visible.target.id || 'top';
+    orbitDots.forEach((dot) => dot.classList.toggle('active', dot.dataset.target === id));
+  },
+  { threshold: [0.28, 0.45, 0.62] },
+);
+
+sectionTargets.forEach((id) => {
+  const target = id === 'top' ? document.querySelector('#top') : document.querySelector(`#${id}`);
+  if (target) sectionObserver.observe(target);
+});
+
+function setCommandMenu(open) {
+  commandMenu.classList.toggle('open', open);
+  commandMenu.setAttribute('aria-hidden', String(!open));
+  if (open) {
+    commandButtons[0]?.focus();
+  } else {
+    openCommand.focus();
+  }
+}
+
+openCommand.addEventListener('click', () => setCommandMenu(true));
+closeCommand.addEventListener('click', () => setCommandMenu(false));
+commandMenu.addEventListener('click', (event) => {
+  if (event.target === commandMenu) setCommandMenu(false);
+});
+
+commandButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const command = button.dataset.command;
+    setCommandMenu(false);
+    if (sectionTargets.includes(command)) scrollToSection(command);
+    if (command === 'resume') window.location.href = 'assets/docs/tobi_oniyide_master_resume.pdf';
+    if (command === 'github') window.location.href = 'https://github.com/Akannione';
+  });
+});
+
+window.addEventListener('keydown', (event) => {
+  const key = event.key.toLowerCase();
+  if (key === 'k' && !event.metaKey && !event.ctrlKey && !event.altKey) {
+    event.preventDefault();
+    setCommandMenu(!commandMenu.classList.contains('open'));
+  }
+  if (event.key === 'Escape' && commandMenu.classList.contains('open')) {
+    setCommandMenu(false);
+  }
+  if (key === 'arrowright' && document.activeElement?.classList?.contains('project-tab')) {
+    goToProject(1);
+  }
+  if (key === 'arrowleft' && document.activeElement?.classList?.contains('project-tab')) {
+    goToProject(-1);
+  }
 });
 
 window.addEventListener('scroll', updateProgress, { passive: true });

@@ -18,6 +18,14 @@
       <span class="rail-number">06</span>
     </div>
 
+    <aside class="section-orbit" aria-label="Section navigation">
+      <button type="button" class="orbit-dot active" data-target="top"><span>Home</span></button>
+      <button type="button" class="orbit-dot" data-target="projects"><span>Projects</span></button>
+      <button type="button" class="orbit-dot" data-target="services"><span>Services</span></button>
+      <button type="button" class="orbit-dot" data-target="system"><span>TOBI_OS</span></button>
+      <button type="button" class="orbit-dot" data-target="contact"><span>Contact</span></button>
+    </aside>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Tobi Oniyide portfolio home">
         <span class="brand-mark">TO</span>
@@ -29,6 +37,7 @@
         <a href="#system">TOBI_OS</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="command-open" type="button" id="openCommand">Command</button>
     </header>
 
     <main id="top">
@@ -50,6 +59,10 @@
           <div class="system-topbar">
             <span>Business Operations Overview</span>
             <button type="button" id="cycleProject">Cycle proof</button>
+          </div>
+          <div class="live-status">
+            <span>Live proof hub</span>
+            <strong id="activeSignal">Operations Reporting</strong>
           </div>
           <div class="metric-board">
             <article>
@@ -116,6 +129,11 @@
         </div>
 
         <div class="project-shell">
+          <div class="project-controls">
+            <button type="button" id="previousProject">Previous</button>
+            <div class="project-meter" aria-hidden="true"><span id="projectMeter"></span></div>
+            <button type="button" id="nextProject">Next</button>
+          </div>
           <div class="project-tabs" role="tablist" aria-label="Featured projects">
             <button type="button" class="project-tab active" data-project="operations">Operations Reporting</button>
             <button type="button" class="project-tab" data-project="crm">CRM Pipeline</button>
@@ -248,6 +266,23 @@
         </div>
       </section>
     </main>
+
+    <div class="command-menu" id="commandMenu" aria-hidden="true">
+      <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
+        <div class="command-head">
+          <h2 id="commandTitle">Jump anywhere.</h2>
+          <button type="button" id="closeCommand" aria-label="Close command menu">Close</button>
+        </div>
+        <div class="command-list">
+          <button type="button" data-command="projects">View featured projects</button>
+          <button type="button" data-command="services">Review service lanes</button>
+          <button type="button" data-command="system">Open TOBI_OS section</button>
+          <button type="button" data-command="resume">Open resume</button>
+          <button type="button" data-command="github">Open GitHub</button>
+        </div>
+        <p>Shortcut: press <strong>k</strong> to open or close this panel.</p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
