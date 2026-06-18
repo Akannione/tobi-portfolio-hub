@@ -58,7 +58,7 @@ The deployable folder now includes:
 
 - public project links
 - bundled resume PDF at `assets/docs/tobi_oniyide_master_resume.pdf`
-- image assets under `assets/images/`
+- portfolio screenshot assets under `assets/images/`
 - native JavaScript interactions in `script.js`
 - deployment checker at `scripts/check_deploy_ready.py`
 - `.nojekyll` for GitHub Pages compatibility
@@ -78,9 +78,17 @@ The Chiropractic Business OS preview is stored at:
 portfolio_hub/assets/images/business_os_mvp.svg
 ```
 
-It is a screenshot-style dashboard asset based on the actual `business_os_mvp`
-React dashboard structure, because the current local environment blocked live
-Vite browser capture during this pass.
+The portfolio project spotlight uses the raw screenshot assets inside a cleaned
+CSS browser frame:
+
+```text
+portfolio_hub/assets/images/business_operations_dashboard.png
+portfolio_hub/assets/images/crm_dashboard.png
+portfolio_hub/assets/images/business_os_mvp.svg
+```
+
+The frame, crop, and spacing live in `styles.css`, so future screenshots can be
+swapped by changing `script.js` without regenerating wrapper images.
 
 ## Next Improvements
 

@@ -6,6 +6,7 @@ const projects = {
       'A repeatable reporting workflow that cleans messy operations data with Python, analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management review.',
     image: 'assets/images/business_operations_dashboard.png',
     alt: 'Dashboard preview for operations reporting project',
+    frameLabel: 'Business Operations Reporting Dashboard',
     results: [
       '640 cleaned records after deduplication',
       '95.8% first-response SLA performance',
@@ -27,6 +28,7 @@ const projects = {
       'A sales operations workflow that cleans CRM exports, scores leads, prioritizes follow-up work, and turns pipeline data into clear management reports.',
     image: 'assets/images/crm_dashboard.png',
     alt: 'Dashboard preview for CRM sales pipeline project',
+    frameLabel: 'CRM Sales Pipeline Preview',
     results: [
       '760 deduplicated clean leads',
       '$4.46M active pipeline value',
@@ -48,6 +50,7 @@ const projects = {
       'A focused full-stack web app for chiropractic practices to capture inquiries, track follow-ups, review KPIs, export CSVs, and support lightweight intake automation.',
     image: 'assets/images/business_os_mvp.svg',
     alt: 'Dashboard preview for Chiropractic Business OS MVP',
+    frameLabel: 'Chiropractic Business OS Preview',
     results: [
       'React, Vite, TypeScript frontend',
       'Node, Express, TypeScript backend',
@@ -149,6 +152,8 @@ function renderProject(key) {
   projectDescription.textContent = project.description;
   projectImage.src = project.image;
   projectImage.alt = project.alt;
+  projectImage.parentElement.dataset.project = key;
+  projectImage.parentElement.dataset.label = project.frameLabel;
   projectMeter.style.transform = `translateX(${index * 100}%)`;
   activeSignal.textContent = project.title.replace(' & Automation System', '').replace(' System', '');
 
