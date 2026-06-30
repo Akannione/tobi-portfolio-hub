@@ -17,6 +17,7 @@ The hub turns scattered project folders into one public-facing proof system for:
 - Business Operations Reporting & Automation System
 - CRM Sales Pipeline & Lead Follow-Up Automation System
 - Chiropractic Business OS MVP
+- Transcript-Grounded AI Learning Agent
 - TOBI_OS automation and operating-system proof
 
 ## How To View
@@ -76,6 +77,7 @@ The live Chiropractic Business OS production screenshot is stored at:
 
 ```text
 portfolio_hub/assets/images/business_os_mvp.png
+portfolio_hub/assets/images/transcript_learning_agent.png
 ```
 
 The portfolio project spotlight uses the raw screenshot assets inside a cleaned
@@ -94,6 +96,6 @@ swapped by changing `script.js` without regenerating wrapper images.
 
 - Add a deployed public URL.
 - Add a short walkthrough video for each completed case study.
-- Package one qualified AI automation case study with public-safe proof.
-- Add a future AI automation case study.
+- Use the live proof in direct applications, consulting conversations, and graduate-school positioning.
+- Add new projects only when they exceed the proof quality of an existing entry.
 - Add contact email once the public contact route is finalized.

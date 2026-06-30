@@ -1,6 +1,6 @@
 const projects = {
   operations: {
-    index: '01 / 03',
+    index: '01 / 04',
     title: 'Business Operations Reporting & Automation System',
     description:
       'A repeatable reporting workflow that cleans messy operations data with Python, analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management review.',
@@ -22,7 +22,7 @@ const projects = {
     ],
   },
   crm: {
-    index: '02 / 03',
+    index: '02 / 04',
     title: 'CRM Sales Pipeline & Lead Follow-Up Automation System',
     description:
       'A sales operations workflow that cleans CRM exports, scores leads, prioritizes follow-up work, and turns pipeline data into clear management reports.',
@@ -44,7 +44,7 @@ const projects = {
     ],
   },
   businessos: {
-    index: '03 / 03',
+    index: '03 / 04',
     title: 'Chiropractic Business OS MVP',
     description:
       'A production-deployed workflow layer for chiropractic practices to capture inquiries and prioritize overdue, due-today, and upcoming patient reactivations without replacing the existing EHR or schedule.',
@@ -60,6 +60,25 @@ const projects = {
       ['Live demo', 'https://frontend-gold-alpha-31.vercel.app'],
       ['Case study', 'https://github.com/Akannione/chiropractic-business-os/blob/main/docs/CASE_STUDY.md'],
       ['GitHub', 'https://github.com/Akannione/chiropractic-business-os'],
+    ],
+  },
+  learningagent: {
+    index: '04 / 04',
+    title: 'Transcript-Grounded AI Learning Agent',
+    description:
+      'A local Python automation that monitors selected AI engineering sources, reuses cached transcripts, gates failed inputs, promotes durable workflow lessons, and logs phone-summary delivery outcomes.',
+    image: 'assets/images/transcript_learning_agent.png',
+    alt: 'Transcript-grounded AI learning agent case study with verified cache and run metrics',
+    frameLabel: 'AI Learning Agent Production Evidence',
+    results: [
+      '63 videos tracked with 56 transcript-backed',
+      '7 known failures cached and gated from analysis',
+      '33 unit tests passing with structured run receipts',
+    ],
+    links: [
+      ['Case study', 'case-studies/transcript-learning-agent.html'],
+      ['Workflow', 'case-studies/transcript-learning-agent.html#workflow'],
+      ['Reliability', 'case-studies/transcript-learning-agent.html#reliability'],
     ],
   },
 };

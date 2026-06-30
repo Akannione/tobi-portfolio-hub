@@ -21,7 +21,9 @@ REQUIRED_FILES = [
     ROOT / "assets/images/business_operations_dashboard.png",
     ROOT / "assets/images/business_operations_kpi.png",
     ROOT / "assets/images/business_os_mvp.png",
+    ROOT / "assets/images/transcript_learning_agent.png",
     ROOT / "assets/images/crm_dashboard.png",
+    ROOT / "case-studies/transcript-learning-agent.html",
 ]
 
 BLOCKED_PATTERNS = [
