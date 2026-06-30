@@ -72,10 +72,10 @@ portfolio/business_admin_cist_ops_automation/assets/screenshots/
 portfolio/crm_sales_pipeline_automation_system/assets/screenshots/
 ```
 
-The Chiropractic Business OS preview is stored at:
+The live Chiropractic Business OS production screenshot is stored at:
 
 ```text
-portfolio_hub/assets/images/business_os_mvp.svg
+portfolio_hub/assets/images/business_os_mvp.png
 ```
 
 The portfolio project spotlight uses the raw screenshot assets inside a cleaned
@@ -84,7 +84,7 @@ CSS browser frame:
 ```text
 portfolio_hub/assets/images/business_operations_dashboard.png
 portfolio_hub/assets/images/crm_dashboard.png
-portfolio_hub/assets/images/business_os_mvp.svg
+portfolio_hub/assets/images/business_os_mvp.png
 ```
 
 The frame, crop, and spacing live in `styles.css`, so future screenshots can be
@@ -94,6 +94,6 @@ swapped by changing `script.js` without regenerating wrapper images.
 
 - Add a deployed public URL.
 - Add a short walkthrough video for each completed case study.
-- Replace the Business OS SVG preview with a live browser screenshot when local Vite capture is available.
+- Package one qualified AI automation case study with public-safe proof.
 - Add a future AI automation case study.
 - Add contact email once the public contact route is finalized.

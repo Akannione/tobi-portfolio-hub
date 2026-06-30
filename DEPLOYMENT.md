@@ -49,4 +49,4 @@ python3 AUTOMATION/validate_os.py
 
 - No contact form is included yet.
 - TOBI_OS itself is described but not exposed through local file links.
-- The Business OS preview is an SVG dashboard asset; replace it with a live browser screenshot when Vite capture is available.
+- The CBOS spotlight uses a production WebKit screenshot captured from the live reactivation workflow.

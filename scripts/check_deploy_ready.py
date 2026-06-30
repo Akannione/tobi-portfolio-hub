@@ -20,7 +20,7 @@ REQUIRED_FILES = [
     ROOT / "assets/docs/tobi_oniyide_master_resume.pdf",
     ROOT / "assets/images/business_operations_dashboard.png",
     ROOT / "assets/images/business_operations_kpi.png",
-    ROOT / "assets/images/business_os_mvp.svg",
+    ROOT / "assets/images/business_os_mvp.png",
     ROOT / "assets/images/crm_dashboard.png",
 ]
 
