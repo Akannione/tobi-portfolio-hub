@@ -18,6 +18,7 @@ The hub turns scattered project folders into one public-facing proof system for:
 - CRM Sales Pipeline & Lead Follow-Up Automation System
 - Chiropractic Business OS MVP
 - Transcript-Grounded AI Learning Agent
+- AI Signal Routine
 - TOBI_OS automation and operating-system proof
 
 ## How To View
@@ -78,6 +79,7 @@ The live Chiropractic Business OS production screenshot is stored at:
 ```text
 portfolio_hub/assets/images/business_os_mvp.png
 portfolio_hub/assets/images/transcript_learning_agent.png
+portfolio_hub/assets/images/ai_signal_routine.png
 ```
 
 The portfolio project spotlight uses the raw screenshot assets inside a cleaned

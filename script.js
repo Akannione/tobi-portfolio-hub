@@ -1,6 +1,6 @@
 const projects = {
   operations: {
-    index: '01 / 04',
+    index: '01 / 05',
     title: 'Business Operations Reporting & Automation System',
     description:
       'A repeatable reporting workflow that cleans messy operations data with Python, analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management review.',
@@ -22,7 +22,7 @@ const projects = {
     ],
   },
   crm: {
-    index: '02 / 04',
+    index: '02 / 05',
     title: 'CRM Sales Pipeline & Lead Follow-Up Automation System',
     description:
       'A sales operations workflow that cleans CRM exports, scores leads, prioritizes follow-up work, and turns pipeline data into clear management reports.',
@@ -44,7 +44,7 @@ const projects = {
     ],
   },
   businessos: {
-    index: '03 / 04',
+    index: '03 / 05',
     title: 'Chiropractic Business OS MVP',
     description:
       'A production-deployed workflow layer for chiropractic practices to capture inquiries and prioritize overdue, due-today, and upcoming patient reactivations without replacing the existing EHR or schedule.',
@@ -63,7 +63,7 @@ const projects = {
     ],
   },
   learningagent: {
-    index: '04 / 04',
+    index: '04 / 05',
     title: 'Transcript-Grounded AI Learning Agent',
     description:
       'A local Python automation that monitors selected AI engineering sources, reuses cached transcripts, gates failed inputs, promotes durable workflow lessons, and logs phone-summary delivery outcomes.',
@@ -79,6 +79,25 @@ const projects = {
       ['Case study', 'case-studies/transcript-learning-agent.html'],
       ['Workflow', 'case-studies/transcript-learning-agent.html#workflow'],
       ['Reliability', 'case-studies/transcript-learning-agent.html#reliability'],
+    ],
+  },
+  aisignal: {
+    index: '05 / 05',
+    title: 'AI Signal Routine',
+    description:
+      'A scheduled Python and Streamlit workflow that monitors AI, analytics, and automation sources, scores each signal for operator value, stores run history in SQLite, and turns noise into a ranked action queue.',
+    image: 'assets/images/ai_signal_routine.png',
+    alt: 'Sanitized AI Signal Routine dashboard with ranked signals and a decision workspace',
+    frameLabel: 'AI Signal Routine Sample Dashboard',
+    results: [
+      '18 ranked signals persisted in the latest scheduled run',
+      'SQLite history supports run-over-run trend analysis',
+      '20 tests passing with LaunchAgent exit code 0',
+    ],
+    links: [
+      ['Case study', 'case-studies/ai-signal-routine.html'],
+      ['GitHub', 'https://github.com/Akannione/ai-signal-routine'],
+      ['Reliability', 'case-studies/ai-signal-routine.html#reliability'],
     ],
   },
 };

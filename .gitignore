@@ -1,3 +1,15 @@
 __pycache__/
 *.pyc
 safari-verification*.png
+
+# Local agent tooling state, not portfolio content
+.claude-flow/
+.swarm/
+ruvector.db
+
+# Local continuity docs kept out of the public portfolio repo
+AGENTS.md
+CLAUDE.md
+PROJECT_STATUS.md
+PROJECT_STATUS*.md
+CONTINUE_COMMANDS.md
