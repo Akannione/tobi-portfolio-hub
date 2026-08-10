@@ -100,4 +100,3 @@ swapped by changing `script.js` without regenerating wrapper images.
 - Add a short walkthrough video for each completed case study.
 - Use the live proof in direct applications, consulting conversations, and graduate-school positioning.
 - Add new projects only when they exceed the proof quality of an existing entry.
-- Add contact email once the public contact route is finalized.

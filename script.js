@@ -280,6 +280,7 @@ commandButtons.forEach((button) => {
     if (sectionTargets.includes(command)) scrollToSection(command);
     if (command === 'resume') window.location.href = 'assets/docs/tobi_oniyide_master_resume.pdf';
     if (command === 'github') window.location.href = 'https://github.com/Akannione';
+    if (command === 'email') window.location.href = 'mailto:tobioniyide27@gmail.com';
   });
 });
 

@@ -1044,13 +1044,15 @@ main {
   color: var(--muted);
 }
 
+/* Values here are addresses and URLs, so they stay in their real case
+   rather than taking the uppercase treatment used elsewhere. */
 .contact-grid strong {
   font-family: var(--display);
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: var(--blue);
+  overflow-wrap: anywhere;
 }
 
 /* ----------------------------------------------------------------- footer */
