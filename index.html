@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tobi Oniyide | Analytics, Automation, and Business Systems Portfolio</title>
+    <title>Tobi Oniyide | AI Automation, Analytics &amp; Technical Consulting</title>
     <meta
       name="description"
-      content="Portfolio hub for Tobi Oniyide: analytics, automation, business intelligence, technical consulting systems, and AI operating workflows."
+      content="Portfolio hub for Tobi Oniyide: AI automation, analytics, business intelligence, technical consulting systems, and reusable operating workflows."
     >
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+
     <div class="progress-rail" aria-hidden="true">
       <span class="rail-number">01</span>
       <div class="rail-line"><span id="scrollProgress"></span></div>
@@ -20,8 +23,8 @@
 
     <aside class="section-orbit" aria-label="Section navigation">
       <button type="button" class="orbit-dot active" data-target="top"><span>Home</span></button>
-      <button type="button" class="orbit-dot" data-target="projects"><span>Projects</span></button>
-      <button type="button" class="orbit-dot" data-target="services"><span>Services</span></button>
+      <button type="button" class="orbit-dot" data-target="projects"><span>Work</span></button>
+      <button type="button" class="orbit-dot" data-target="services"><span>Expertise</span></button>
       <button type="button" class="orbit-dot" data-target="system"><span>TOBI_OS</span></button>
       <button type="button" class="orbit-dot" data-target="contact"><span>Contact</span></button>
     </aside>
@@ -32,80 +35,49 @@
         <span>Tobi Oniyide</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#system">TOBI_OS</a>
+        <a href="#projects">Work</a>
+        <a href="#services">Expertise</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="command-open" type="button" id="openCommand">Menu</button>
     </header>
 
     <main id="top">
-      <section class="hero section reveal">
+      <section class="hero reveal">
         <div class="hero-copy">
-          <h1>Business systems, analytics, and automation built for practical decisions.</h1>
-          <p>
-            I connect Business Administration and Computer Information Systems Technology with
-            practical reporting systems, CRM cleanup, workflow automation, and full-stack business tools.
+          <h1>
+            <span>I build</span>
+            <span>systems</span>
+            <span>that make</span>
+            <span>work move.</span>
+          </h1>
+          <p class="hero-lede">
+            AI automation, analytics, and technical consulting for teams ready to replace
+            operational friction with clarity.
           </p>
           <div class="actions" aria-label="Primary links">
-            <a class="button primary" href="https://github.com/Akannione">GitHub</a>
-            <a class="button" href="https://www.linkedin.com/in/tobi-oniyide/">LinkedIn</a>
-            <a class="button" href="assets/docs/tobi_oniyide_master_resume.pdf">Resume</a>
+            <a class="button primary" href="#projects">Explore selected work <span aria-hidden="true">&#8594;</span></a>
+            <a class="button" href="#contact">Start a conversation <span aria-hidden="true">&#8594;</span></a>
           </div>
+          <p class="hero-meta">Atlanta, GA &middot; Available for select projects</p>
         </div>
 
-        <div class="hero-system" aria-label="Interactive analytics system preview">
-          <div class="system-topbar">
-            <span>Business Operations Overview</span>
-            <button type="button" id="cycleProject">Cycle proof</button>
-          </div>
-          <div class="live-status">
-            <span>Live proof hub</span>
-            <strong id="activeSignal">Operations Reporting</strong>
-          </div>
-          <div class="metric-board">
-            <article>
-              <span>Total value</span>
-              <strong data-count="4462">$0</strong>
-              <small>pipeline tracked</small>
-            </article>
-            <article>
-              <span>Clean records</span>
-              <strong data-count="1400">0</strong>
-              <small>across case studies</small>
-            </article>
-            <article>
-              <span>Response SLA</span>
-              <strong data-count="96">0%</strong>
-              <small>operations workflow</small>
-            </article>
-          </div>
-          <div class="chart-stage">
-            <div class="chart-line" aria-hidden="true"></div>
-            <div class="chart-bars" aria-hidden="true">
-              <span style="--h: 42%"></span>
-              <span style="--h: 66%"></span>
-              <span style="--h: 58%"></span>
-              <span style="--h: 82%"></span>
-              <span style="--h: 74%"></span>
-              <span style="--h: 92%"></span>
-            </div>
-          </div>
-          <div class="pipeline-strip">
-            <span>Clean</span>
-            <span>Model</span>
-            <span>Report</span>
-            <span>Automate</span>
+        <div class="hero-mark" aria-hidden="true">
+          <svg viewBox="0 0 220 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8 A 152 152 0 1 1 12 312" stroke="currentColor" stroke-width="3" />
+          </svg>
+          <div class="hero-ticks">
+            <span></span>
+            <span class="accent"></span>
+            <span class="accent short"></span>
+            <span class="short"></span>
           </div>
         </div>
       </section>
 
       <section class="proof-band reveal" aria-labelledby="proof-heading">
-        <div>
-          <h2 id="proof-heading">Current proof system</h2>
-          <p>Public work connected to business outcomes, not isolated technical demos.</p>
-        </div>
+        <h2 id="proof-heading" class="proof-title">Current proof system</h2>
         <dl class="proof-grid">
           <div>
             <dt data-count="5">0</dt>
@@ -124,150 +96,263 @@
 
       <section class="section projects reveal" id="projects" aria-labelledby="projects-heading">
         <div class="section-heading">
-          <h2 id="projects-heading">Systems I have built.</h2>
-          <p>Select a project to shift the spotlight, preview the work, and open the strongest proof.</p>
+          <h2 id="projects-heading">Selected<br>systems</h2>
+          <div class="section-aside">
+            <p>
+              Business problems translated into working systems, measurable outcomes, and
+              reusable operating logic.
+            </p>
+            <p class="now-viewing">
+              Now viewing <strong id="activeSignal">Operations Reporting</strong>
+              <button type="button" id="cycleProject">Cycle proof</button>
+            </p>
+          </div>
         </div>
 
         <div class="project-shell">
-          <div class="project-controls">
-            <button type="button" id="previousProject">Previous</button>
+          <div class="project-tabs" role="group" aria-label="Featured projects">
+            <button type="button" class="project-tab active" data-project="operations">
+              <span class="tab-number">01</span>
+              <span class="tab-name">Business Operations Reporting &amp; Automation</span>
+              <span class="tab-arrow" aria-hidden="true">&#8594;</span>
+            </button>
+            <button type="button" class="project-tab" data-project="crm">
+              <span class="tab-number">02</span>
+              <span class="tab-name">CRM Pipeline &amp; Lead Follow-Up</span>
+              <span class="tab-arrow" aria-hidden="true">&#8594;</span>
+            </button>
+            <button type="button" class="project-tab" data-project="businessos">
+              <span class="tab-number">03</span>
+              <span class="tab-name">Chiropractic Business OS</span>
+              <span class="tab-arrow" aria-hidden="true">&#8594;</span>
+            </button>
+            <button type="button" class="project-tab" data-project="learningagent">
+              <span class="tab-number">04</span>
+              <span class="tab-name">Transcript-Grounded AI Learning Agent</span>
+              <span class="tab-arrow" aria-hidden="true">&#8594;</span>
+            </button>
+            <button type="button" class="project-tab" data-project="aisignal">
+              <span class="tab-number">05</span>
+              <span class="tab-name">AI Signal Routine</span>
+              <span class="tab-arrow" aria-hidden="true">&#8594;</span>
+            </button>
             <div class="project-meter" aria-hidden="true"><span id="projectMeter"></span></div>
-            <button type="button" id="nextProject">Next</button>
-          </div>
-          <div class="project-tabs" role="tablist" aria-label="Featured projects">
-            <button type="button" class="project-tab active" data-project="operations">Operations Reporting</button>
-            <button type="button" class="project-tab" data-project="crm">CRM Pipeline</button>
-            <button type="button" class="project-tab" data-project="businessos">Business OS MVP</button>
-            <button type="button" class="project-tab" data-project="learningagent">AI Learning Agent</button>
-            <button type="button" class="project-tab" data-project="aisignal">AI Signal Routine</button>
           </div>
 
           <article class="project-spotlight" id="projectSpotlight">
             <div class="project-copy">
-              <span id="projectIndex">01 / 05</span>
+              <p class="spotlight-eyebrow">Project</p>
               <h3 id="projectTitle">Business Operations Reporting &amp; Automation System</h3>
               <p id="projectDescription">
                 A repeatable reporting workflow that cleans messy operations data with Python,
                 analyzes KPIs with SQL, and produces dashboard-ready outputs for weekly management review.
               </p>
-              <ul class="result-list" id="projectResults">
-                <li>640 cleaned records after deduplication</li>
-                <li>95.8% first-response SLA performance</li>
-                <li>$158,891 estimated margin supported</li>
-              </ul>
-              <div class="link-row" id="projectLinks">
-                <a href="https://github.com/Akannione/business-operations-reporting-system">GitHub README</a>
-                <a href="https://htmlpreview.github.io/?https://github.com/Akannione/business-operations-reporting-system/blob/main/reports/portfolio_showcase.html">Showcase</a>
-                <a href="https://github.com/Akannione/business-operations-reporting-system/blob/main/case_study.md">Case study</a>
-              </div>
             </div>
+
             <figure class="project-image" data-project="operations" data-label="Business Operations Reporting Dashboard">
               <img id="projectImage" src="assets/images/business_operations_dashboard.png" alt="Dashboard preview for operations reporting project">
             </figure>
+
+            <div class="project-detail">
+              <div class="detail-block">
+                <p class="detail-label">Outcomes</p>
+                <ul class="result-list" id="projectResults">
+                  <li>640 cleaned records after deduplication</li>
+                  <li>95.8% first-response SLA performance</li>
+                  <li>$158,891 estimated margin supported</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <div class="link-row" id="projectLinks">
+                  <a href="https://github.com/Akannione/business-operations-reporting-system">GitHub README</a>
+                  <a href="https://htmlpreview.github.io/?https://github.com/Akannione/business-operations-reporting-system/blob/main/reports/portfolio_showcase.html">Showcase</a>
+                  <a href="https://github.com/Akannione/business-operations-reporting-system/blob/main/case_study.md">Case study</a>
+                </div>
+              </div>
+            </div>
           </article>
+
+          <div class="project-controls">
+            <button type="button" id="previousProject"><span aria-hidden="true">&#8592;</span> Previous project</button>
+            <span id="projectIndex">01 / 05</span>
+            <button type="button" id="nextProject">Next project <span aria-hidden="true">&#8594;</span></button>
+          </div>
         </div>
       </section>
 
       <section class="section services reveal" id="services" aria-labelledby="services-heading">
         <div class="section-heading">
-          <h2 id="services-heading">How I help businesses win.</h2>
-          <p>Focused service lanes tied to existing proof and repeatable delivery.</p>
+          <h2 id="services-heading">Expertise</h2>
+          <div class="section-aside">
+            <p>
+              I connect business context, clean data, and reliable automation into systems
+              people can actually operate.
+            </p>
+          </div>
         </div>
         <div class="service-grid">
           <article>
             <span class="service-icon">01</span>
-            <h3>Data cleanup and reporting</h3>
-            <p>Clean spreadsheets, CRM exports, CSV files, and recurring reports so teams can rely on their numbers.</p>
+            <h3>AI automation</h3>
+            <p>Agent workflows, research pipelines, approval-aware automations, and reusable operating logic.</p>
           </article>
           <article>
             <span class="service-icon">02</span>
-            <h3>Dashboards and KPI workflows</h3>
-            <p>Build Excel, Google Sheets, SQL, or lightweight HTML dashboards around the decisions a team needs to make.</p>
+            <h3>Data analytics</h3>
+            <p>Python, SQL, Excel, Power BI, Looker Studio, KPI design, and decision-ready reporting.</p>
           </article>
           <article>
             <span class="service-icon">03</span>
-            <h3>CRM and follow-up systems</h3>
-            <p>Organize lead records, deal stages, priorities, and follow-up queues so revenue does not get lost in messy data.</p>
+            <h3>Technical consulting</h3>
+            <p>Discovery, workflow mapping, requirements, implementation planning, documentation, and handoff.</p>
           </article>
           <article>
             <span class="service-icon">04</span>
-            <h3>Business OS prototypes</h3>
-            <p>Design practical web tools for intake, tracking, reporting, exports, and repeatable operating workflows.</p>
+            <h3>Business systems</h3>
+            <p>CRM cleanup, intake, tracking, exports, follow-up queues, and lightweight operating tools.</p>
           </article>
+        </div>
+        <div class="tool-strip">
+          <p class="detail-label">Tools I use</p>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+            <li>AWS</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>MongoDB</li>
+            <li>Shopify</li>
+            <li>Canva</li>
+          </ul>
         </div>
       </section>
 
       <section class="section os-section reveal" id="system" aria-labelledby="os-heading">
-        <div class="os-copy">
-          <h2 id="os-heading">TOBI_OS: the operating layer behind the work.</h2>
-          <p>
-            TOBI_OS coordinates career priorities, portfolio assets, graduate school planning,
-            opportunity scoring, project health checks, scheduled reviews, and phone digests.
+        <div class="os-panel">
+          <div class="os-copy">
+            <p class="os-eyebrow">The operating layer</p>
+            <h2 id="os-heading">TOBI_OS keeps the work connected.</h2>
+          </div>
+          <p class="os-body">
+            A personal execution system that maps projects, scores opportunities, coordinates
+            scheduled reviews, and turns repeated work into reusable templates, scripts, and workflows.
           </p>
           <ul class="check-list">
-            <li>Maps projects before new work starts</li>
-            <li>Scores opportunities and keeps the next action visible</li>
-            <li>Turns repeated work into templates, scripts, and workflows</li>
-            <li>Keeps portfolio, freelance, consulting, and learning systems connected</li>
+            <li>Project and opportunity intelligence</li>
+            <li>Portfolio and career coordination</li>
+            <li>Reusable automation patterns</li>
           </ul>
-        </div>
-        <div class="os-console">
-          <div class="console-sidebar">
-            <span>TOBI_OS</span>
-            <button class="active" type="button">Dashboard</button>
-            <button type="button">Opportunities</button>
-            <button type="button">Projects</button>
-            <button type="button">Automations</button>
-          </div>
-          <div class="console-main">
-            <div class="console-grid">
-              <article><span>System health</span><strong>Pass</strong></article>
-              <article><span>Portfolio hub</span><strong>Live</strong></article>
-              <article><span>Review cadence</span><strong>3x/wk</strong></article>
-              <article><span>Next action</span><strong>Apply</strong></article>
-            </div>
-            <div class="activity-list">
-              <span>Latest automation</span>
-              <p>Refresh OS -> validate -> score opportunities -> send phone digest</p>
-              <div class="activity-line"><span></span></div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section class="section about reveal" aria-labelledby="about-heading">
-        <div>
-          <h2 id="about-heading">Business mind. Systems builder. Problem solver.</h2>
-          <p>
-            I am building toward analytics, automation, business intelligence, solutions engineering,
-            and technical consulting roles. My edge is connecting business context with systems thinking:
-            understanding the workflow, cleaning the data, building the report or tool, and documenting how someone else can keep using it.
-          </p>
+      <section class="section experience reveal" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading">
+          <h2 id="experience-heading">Experience</h2>
+          <div class="section-aside">
+            <p>Built across public-sector IT, education, e-commerce, and consulting projects.</p>
+          </div>
         </div>
-        <div class="about-list">
-          <span>Business Administration</span>
-          <span>Computer Information Systems Technology</span>
-          <span>Python</span>
-          <span>SQL</span>
-          <span>React</span>
-          <span>TypeScript</span>
-          <span>MongoDB</span>
-          <span>Workflow automation</span>
+
+        <ol class="timeline">
+          <li>
+            <span class="timeline-year">2025 &mdash; Present</span>
+            <h3>AI automation &amp; data analytics consultant</h3>
+            <span class="timeline-org">Independent</span>
+            <p>
+              Designing automation workflows, analytics systems, dashboards, operating tools,
+              and technical delivery plans for small businesses.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-year">2025</span>
+            <h3>IT asset analyst intern</h3>
+            <span class="timeline-org">Fulton County IT Center of Excellence</span>
+            <p>
+              Created SOPs and process maps supporting 2,000+ devices; improved asset workflows
+              with ManageEngine, Excel, Python, and SharePoint.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-year">2023 &mdash; 2025</span>
+            <h3>Academic learning lab center assistant</h3>
+            <span class="timeline-org">Life University</span>
+            <p>
+              Supported 100+ students across Python, SQL, systems, and technical coursework;
+              led lab sessions and created learning materials.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-year">Earlier</span>
+            <h3>E-commerce designer &amp; social media manager</h3>
+            <span class="timeline-org">The Giving Arts &middot; Cumberland Track &amp; Field</span>
+            <p>
+              Built Shopify and Canva assets, managed content, and translated organizational
+              goals into practical digital execution.
+            </p>
+          </li>
+        </ol>
+
+        <div class="education">
+          <p class="detail-label">Education</p>
+          <div class="education-grid">
+            <article>
+              <h3>B.S. Computer Information Systems &amp; Technology</h3>
+              <span>Life University</span>
+            </article>
+            <article>
+              <h3>B.B.A. Business Administration</h3>
+              <span>Life University</span>
+            </article>
+            <article>
+              <h3>MS Data Science &amp; Analytics</h3>
+              <span>Graduate study</span>
+            </article>
+          </div>
+          <p class="education-note">
+            Six-time NAIA All-American sprinter &mdash; discipline, leadership, and performance under pressure.
+          </p>
         </div>
       </section>
 
       <section class="section contact reveal" id="contact" aria-labelledby="contact-heading">
-        <div>
-          <h2 id="contact-heading">Let's build something useful.</h2>
-          <p>Use the links below to review the work, resume, and public profiles.</p>
+        <h2 id="contact-heading">
+          <span>Let's make</span>
+          <span>the next system</span>
+          <span>useful.</span>
+        </h2>
+
+        <div class="contact-body">
+          <dl class="contact-facts">
+            <div>
+              <dt>Location</dt>
+              <dd>Atlanta, Georgia</dd>
+            </div>
+            <div>
+              <dt>Availability</dt>
+              <dd>Available for select consulting and technical opportunities</dd>
+            </div>
+          </dl>
+          <p class="contact-lede">
+            Open to AI automation, analytics, and technical consulting projects where clearer
+            operations create measurable value.
+          </p>
         </div>
+
         <div class="contact-grid">
-          <a href="https://github.com/Akannione"><span>GitHub</span><strong>github.com/Akannione</strong></a>
-          <a href="https://www.linkedin.com/in/tobi-oniyide/"><span>LinkedIn</span><strong>linkedin.com/in/tobi-oniyide</strong></a>
-          <a href="assets/docs/tobi_oniyide_master_resume.pdf"><span>Resume</span><strong>PDF resume</strong></a>
+          <a href="https://www.linkedin.com/in/tobi-oniyide/"><span>Start a conversation</span><strong>LinkedIn message <span aria-hidden="true">&#8594;</span></strong></a>
+          <a href="https://github.com/Akannione"><span>GitHub</span><strong>github.com/Akannione <span aria-hidden="true">&#8594;</span></strong></a>
+          <a href="assets/docs/tobi_oniyide_master_resume.pdf"><span>Résumé</span><strong>Download PDF <span aria-hidden="true">&#8594;</span></strong></a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <span class="footer-brand">Tobi Oniyide</span>
+      <span>AI automation &middot; Data analytics &middot; Technical consulting</span>
+      <span>&copy; 2026</span>
+    </footer>
 
     <div class="command-menu" id="commandMenu" aria-hidden="true">
       <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
@@ -277,12 +362,12 @@
         </div>
         <div class="command-list">
           <button type="button" data-command="projects">View featured projects</button>
-          <button type="button" data-command="services">Review service lanes</button>
+          <button type="button" data-command="services">Review expertise lanes</button>
           <button type="button" data-command="system">Open TOBI_OS section</button>
-          <button type="button" data-command="resume">Open resume</button>
+          <button type="button" data-command="resume">Open résumé</button>
           <button type="button" data-command="github">Open GitHub</button>
+          <button type="button" data-command="contact">Go to contact</button>
         </div>
-        <p>Shortcut: press <strong>k</strong> to open or close this panel.</p>
       </div>
     </div>
 
